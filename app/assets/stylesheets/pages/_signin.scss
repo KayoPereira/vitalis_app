@@ -1,0 +1,35 @@
+.left {
+  width: 60%;
+  height: calc(100vh - 66px);
+  position: relative;
+  background-image: url("background-signin.jpg");
+
+  form {
+    width: 60%;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    margin-top: 150px;
+    border: 1px solid #fdbb63;
+    border-radius: 10px;
+  }
+
+  fieldset {
+    margin: 0 20px !important;
+  }
+
+  .dog-and-cat {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+}
+
+.form-inputs {
+}
+
+.right {
+  width: 40%;
+  height: calc(100vh - 66px);
+  background-color: #0179a1;
+}

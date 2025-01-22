@@ -126,6 +126,8 @@ GEM
     ffi (1.17.1-arm-linux-musl)
     ffi (1.17.1-x86_64-linux-gnu)
     ffi (1.17.1-x86_64-linux-musl)
+    font-awesome-sass (6.7.2)
+      sassc (~> 2.0)
     fugit (1.11.1)
       et-orbi (~> 1, >= 1.2.11)
       raabro (~> 1.4)
@@ -314,6 +316,9 @@ GEM
       rexml (~> 3.2, >= 3.2.5)
       rubyzip (>= 1.2.2, < 3.0)
       websocket (~> 1.0)
+    simple_form (5.3.1)
+      actionpack (>= 5.2)
+      activemodel (>= 5.2)
     solid_cable (3.0.5)
       actioncable (>= 7.2)
       activejob (>= 7.2)
@@ -389,12 +394,14 @@ PLATFORMS
   x86_64-linux-musl
 
 DEPENDENCIES
+  autoprefixer-rails
   bootsnap
   bootstrap (~> 5.2)
   brakeman
   capybara
   debug
   devise
+  font-awesome-sass (~> 6.1)
   importmap-rails
   jbuilder
   kamal
@@ -405,6 +412,7 @@ DEPENDENCIES
   rubocop-rails-omakase
   sass-rails (>= 6)
   selenium-webdriver
+  simple_form
   solid_cable
   solid_cache
   solid_queue
