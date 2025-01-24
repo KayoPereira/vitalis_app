@@ -1,0 +1,12 @@
+<div class="container">
+  <% @pets.each do |pet| %>
+    <ul>
+      <div class="card">
+        <li><%= pet.name %></li>
+        <li><%= pet.species %></li>
+        <li><%= pet.breed %></li>
+        <li><%= pet.birthdate.strftime("%d/%m/%Y") %></li>
+      </div>
+    </ul>
+  <% end %>
+</div>
