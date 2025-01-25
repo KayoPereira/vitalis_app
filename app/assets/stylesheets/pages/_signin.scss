@@ -25,8 +25,12 @@
   }
 }
 
-.password {
-  width: 45%;
+.user_password, .user_password_confirmation, .user_first_name, .user_last_name {
+  width: 49%;
+}
+
+.user_phone {
+  margin: 0 2%;
 }
 
 .right {
