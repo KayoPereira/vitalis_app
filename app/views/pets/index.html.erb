@@ -1,15 +1,14 @@
-<div class="container">
-  <% @pets.each do |pet| %>
-    <ul>
-      <div class="card">
-        <li><%= pet.name %></li>
-        <li><%= pet.species %></li>
-        <li><%= pet.breed %></li>
-        <li><%= pet.birthdate.strftime("%d/%m/%Y") %></li>
-        <% if pet.photo.attached? %>
-          <%= cl_image_tag pet.photo.key, height: 300, width: 400, crop: :fill %>
-        <% end %>
-      </div>
-    </ul>
-  <% end %>
-</div>
+<section class="hero-section d-flex flex-column">
+  <%= link_to "Adicionar novo pet", "/pets/new", class: "mb-5 btn btn-warning text-white" %>
+  <div class="card-grid">
+    <% @pets.each do |pet| %>
+      <a class="card" href="/pets/<%= pet.id %>" style="background-color: transparent; border: none;">
+        <div class="card__background" style="background-image: url(<%= pet.photo.attached? ? cl_image_path(pet.photo.key) : image_path("no_image.jpg") %>)"></div>
+        <div class="card__content">
+          <p class="card__category"><%= pet.species %> - <%= pet.breed %></p>
+          <h3 class="card__heading"><%= pet.name %></h3>
+        </div>
+      </a>
+    <% end %>
+  <div>
+</section>
