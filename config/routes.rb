@@ -5,6 +5,8 @@ Rails.application.routes.draw do
   get '/pet_species/:id', to: 'pet_species#show'
   post '/pet_species', to: 'pet_species#create'
   delete '/pet_species/:id', to: 'pet_species#destroy'
+
+  get 'my_pets', to: 'pets#my_pets'
   
   scope '/pet_species/:pet_species_id', as: :pet_species do
     resources :pet_breeds

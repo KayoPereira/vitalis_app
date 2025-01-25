@@ -6,6 +6,9 @@
         <li><%= pet.species %></li>
         <li><%= pet.breed %></li>
         <li><%= pet.birthdate.strftime("%d/%m/%Y") %></li>
+        <% if pet.photo.attached? %>
+          <%= cl_image_tag pet.photo.key, height: 300, width: 400, crop: :fill %>
+        <% end %>
       </div>
     </ul>
   <% end %>

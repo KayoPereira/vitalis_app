@@ -4,8 +4,9 @@
   <%= simple_form_for @pet do |f| %>
     <%= f.input :name %>
     <%= f.input :birthdate %>
-    <%= f.input :species, collection: Pet.species.values %>
-    <%= f.input :breed %>
+    <%= f.input :pet_species_id, collection: PetSpecies.pluck(:name, :id) %>
+    <%= f.input :pet_breed_id, collection: PetBreed.all.pluck(:name, :id) %>
+    <%= f.input :photo, as: :file %>
     <%= f.button :submit %>
   <% end %>
 </div>
