@@ -11,7 +11,7 @@
                       placeholder: "Email" %>
           <%= f.input :password,
                       required: false,
-                      input_html: { autocomplete: "current-password" },
+                      input_html: { autocomplete: "current-password", class: "user_signin_password" },
                       label: false,
                       placeholder: "Senha" %>
           <div class="form-actions d-flex align-items-center mb-3">
@@ -22,9 +22,9 @@
         </div>
       <% end %>
     </div>
-    <%= image_tag "dog_and_cats.png", class: "dog-and-cat" %>
+    <%# image_tag "dog_and_cats.png", class: "dog-and-cat" %>
   </div>
-  <div class="right">
-
+  <div class="right d-flex justify-content-center align-items-center">
+    <%= image_tag "only_logo.png" %>
   </div>
 </div>

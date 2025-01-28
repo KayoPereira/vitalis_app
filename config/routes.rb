@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get '/pets_breeds', to: 'pets#breeds'
   get '/pet_species', to: 'pet_species#index'
   get '/pet_species/new', to: 'pet_species#new'
   get '/pet_species/:id/edit', to: 'pet_species#edit'

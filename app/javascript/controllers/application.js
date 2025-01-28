@@ -1,4 +1,5 @@
 import { Application } from "@hotwired/stimulus"
+import PetSelectorController from "controllers/pet_selector_controller"
 
 const application = Application.start()
 
@@ -6,4 +7,5 @@ const application = Application.start()
 application.debug = false
 window.Stimulus   = application
 
+application.register("pet-selector", PetSelectorController)
 export { application }

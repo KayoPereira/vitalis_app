@@ -1,8 +1,9 @@
 .left {
   width: 60%;
-  height: calc(100vh - 66px);
+  height: calc(100vh - 55px);
   position: relative;
-  background-image: url("background-signin.jpg");
+  background-image: url("footprints.png");
+  background-size: cover;
 
   form {
     width: 60%;
@@ -29,12 +30,16 @@
   width: 49%;
 }
 
+.user_password:has(.user_signin_password) {
+  width: 100% !important;
+}
+
 .user_phone {
   margin: 0 2%;
 }
 
 .right {
   width: 40%;
-  height: calc(100vh - 66px);
+  height: calc(100vh - 55px);
   background-color: #0179a1;
 }

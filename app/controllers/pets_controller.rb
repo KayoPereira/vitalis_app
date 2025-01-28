@@ -11,6 +11,11 @@ class PetsController < ApplicationController
     render :index
   end
 
+  def breeds
+    @breeds = PetBreed.where(pet_species_id: params["species"])
+    render json: @breeds
+  end
+
   def show
   end
 
