@@ -1,0 +1,55 @@
+.container-create-pet {
+  display: flex;
+}
+
+.create-pet-left {
+  width: 50%;
+  padding: 60px 150px;
+
+  .species-breeds {
+    div {
+      width: 49%;
+    }
+  }
+}
+
+#pet_birthdate_1i {
+  margin-left: 0 !important;
+}
+
+#pet_birthdate_3i {
+  margin-right: 0 !important;
+}
+
+.create-pet-right {
+  width: 50%;
+  background-size: cover;
+}
+
+@media (max-width: 1366px) {
+  .create-pet-left {
+    padding: 60px 100px;
+  }
+}
+
+@media (max-width: 768px) {
+  .create-pet-left {
+    width: 100%;
+  }
+
+  .container-create-pet {
+    flex-direction: column;
+  }
+
+  .create-pet-right {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+  }
+}
+
+@media (max-width: 576px) {
+  .create-pet-left {
+    padding: 60px 20px;
+  }
+}

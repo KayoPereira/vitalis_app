@@ -1,0 +1,45 @@
+.left {
+  width: 60%;
+  height: calc(100vh - 55px);
+  position: relative;
+  background-image: url("footprints.png");
+  background-size: cover;
+
+  form {
+    width: 60%;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    margin-top: 150px;
+    border: 1px solid #fdbb63;
+    border-radius: 10px;
+  }
+
+  fieldset {
+    margin: 0 20px !important;
+  }
+
+  .dog-and-cat {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+}
+
+.user_password, .user_password_confirmation, .user_first_name, .user_last_name {
+  width: 49%;
+}
+
+.user_password:has(.user_signin_password) {
+  width: 100% !important;
+}
+
+.user_phone {
+  margin: 0 2%;
+}
+
+.right {
+  width: 40%;
+  height: calc(100vh - 55px);
+  background-color: #0179a1;
+}
