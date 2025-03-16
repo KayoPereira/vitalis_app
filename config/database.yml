@@ -15,15 +15,16 @@
 default: &default
   adapter: postgresql
   encoding: unicode
-  # For details on connection pooling, see Rails configuration guide
-  # https://guides.rubyonrails.org/configuring.html#database-pooling
-  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS", 5) %>
+
+  host: <%= ENV.fetch("DB_HOST", "localhost") %>
+  username: <%= ENV.fetch("VITALIS_APP_DATABASE_USERNAME", "postgres") %>
+  password: <%= ENV.fetch("VITALIS_APP_DATABASE_PASSWORD", "") %>
+
 
 
 development:
   <<: *default
-  username: <%= ENV["VITALIS_APP_DATABASE_USERNAME"] %>
-  password: <%= ENV["VITALIS_APP_DATABASE_PASSWORD"] %>
   database: vitalis_app_development
 
   # The specified database role being used to connect to PostgreSQL.
