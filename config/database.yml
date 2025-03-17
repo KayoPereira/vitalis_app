@@ -84,7 +84,6 @@ test:
 production:
   primary: &primary_production
     <<: *default
-    host: "157.90.123.205"
     database: vitalis_app_production
     username: vitalis_app
     password: <%= ENV["VITALIS_APP_DATABASE_PASSWORD"] %>
