@@ -1,0 +1,4 @@
+CREATE DATABASE vitalis_app_production;
+CREATE DATABASE vitalis_app_production_cache;
+CREATE DATABASE vitalis_app_production_queue;
+CREATE DATABASE vitalis_app_production_cable;
