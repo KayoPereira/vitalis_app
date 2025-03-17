@@ -36,7 +36,7 @@ env:
   clear:
     JOB_CONCURRENCY: 1
     WEB_CONCURRENCY: 1
-    POSTGRES_HOST: 157.90.123.205
+    POSTGRES_HOST: vitalisvet-db
     RAILS_SERVE_STATIC_FILES: true
     POSTGRES_USER: "vitalis_app"
     POSTGRES_DB: "vitalis_app_production"
