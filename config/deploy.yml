@@ -34,8 +34,8 @@ env:
     WEB_CONCURRENCY: 1
     POSTGRES_HOST: vitalisvet-db
     RAILS_SERVE_STATIC_FILES: true
-    POSTGRES_USER: "vitalis_app"
-    POSTGRES_DB: "vitalis_app_production"
+    POSTGRES_USER: postgres
+    POSTGRES_DB: vitalis_app_production
     REDIS_URL: "redis://157.90.123.205:6379/0"
     HOST: 0.0.0.0
 
@@ -64,8 +64,8 @@ accessories:
     port: 5432
     env: 
       clear:
-        POSTGRES_USER: "vitalis_app"
-        POSTGRES_DB: "vitalis_app_production"
+        POSTGRES_USER: postgres
+        POSTGRES_DB: vitalis_app_production
       secret:
         - POSTGRES_PASSWORD
     files:
